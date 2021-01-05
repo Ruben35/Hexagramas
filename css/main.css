@@ -1,3 +1,9 @@
+* {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0; 
+}
+
 body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 40px;
@@ -14,13 +20,25 @@ b {
 	font-size: 45px;
 }
 
-.inputs {
-	font-size: 45px;
-}
-
-.tabla {
+table {
+	width: 59.99999%;
+	margin: 20px;
 	font-family: 'Roboto Black', sans-serif, '900';
 	font-size: 25px;
+	float: left;
+	border-collapse: separate;
+	border-spacing: 10px;
+}
+
+td {
+	background-color: white;
+	border-radius: 10px;
+	text-align: center;
+	box-shadow: 2px 2px 2px grey; /* (-)izquierda-derecha(+), (-)arriba-abajo(+), radio (mayor es borroso, 0 es solido*/
+}
+
+.inputs {
+	font-size: 45px;
 }
 
 .botones {
@@ -32,8 +50,9 @@ b {
 	font-size: 45px;
 }
 
-.footer {
-	font-size: 40px;
+#contenedor-descripcion {
+	display: flex;
+    justify-content: center; 
 }
 
 .hexagrama-descripcion {
@@ -41,10 +60,28 @@ b {
 	background-color: white;
 	padding: 30px;
 	width: 24.99999%;
-	/*border-radius: 10px 30px;*/
-	/*border-radius: 5px 30px 45px 60px;*/
+	display: inline-block;
+	margin: 20px;
+	vertical-align: center;
+	box-shadow: 3px 3px 20px grey;
 }
 
 .hexagrama-descripcion2 {
-	/*OCULTAR ESTE*/
+	display: none;
+}
+
+#descripcion-hover {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+footer {
+	font-size: 40px;
+	background-color: #f29f05;
+
+}
+
+footer > div {
+	display: inline-block;
 }
