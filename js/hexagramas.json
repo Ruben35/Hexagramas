@@ -1,0 +1,495 @@
+{
+    "inferiorT":[
+       {
+          "Ch'ien":{
+             "valorInfT":[7,7,7],
+             "hexagramas":[
+                {
+                   "id":1,
+                   "nombre":"Ch'ien",
+                   "descripcion":"Cielo. Lo creativo. El principio generador.",
+                   "superiorT":"Ch'ien",
+                   "valorSupT":[7,7,7]
+                },
+                {
+                   "id":34,
+                   "nombre":"Ta Chuang",
+                   "descripcion":"Gran fuerza. El gran vigor.",
+                   "superiorT":"Chen",
+                   "valorSupT":[7,8,8]
+                },
+                {
+                   "id":5,
+                   "nombre":"Hsü",
+                   "descripcion":"Esperar. La espera. La maduración.",
+                   "superiorT":"K'an",
+                   "valorSupT":[8,7,8]
+                },
+                {
+                   "id":26,
+                   "nombre":"Ta Ch'u",
+                   "descripcion":"Fuerza educadora. El poder de lo fuerte. La gran acumulación.",
+                   "superiorT":"Ken",
+                   "valorSupT":[8,8,7]
+                },
+                {
+                   "id":11,
+                   "nombre":"T'ai",
+                   "descripcion":"Prosperidad. La paz. La armonía.",
+                   "superiorT":"K'un",
+                   "valorSupT":[8,8,8]
+                },
+                {
+                   "id":9,
+                   "nombre":"Hsiao Ch'u",
+                   "descripcion":"Animalito doméstico. La pequeña fuerza.",
+                   "superiorT":"Sun",
+                   "valorSupT":[8,7,7]
+                },
+                {
+                   "id":14,
+                   "nombre":"Ta Yu",
+                   "descripcion":"Gran dominio. La gran posesión. Lo que se tiene de más.",
+                   "superiorT":"Li",
+                   "valorSupT":[7,8,7]
+                },
+                {
+                   "id":43,
+                   "nombre":"Kuai",
+                   "descripcion":"Decidir. El desbordamiento. La resolución.",
+                   "superiorT":"Tui",
+                   "valorSupT":[7,7,8]
+                }
+             ]
+          },
+          "Chen":{
+             "valorInfT":[7,8,8],
+             "hexagramas":[
+                {
+                   "id":25,
+                   "nombre":"Wu Wang",
+                   "descripcion":"Sinceridad. La inocencia. La naturalidad.",
+                   "superiorT":"Ch'ien",
+                   "valorSupT":[7,7,7]
+                },
+                {
+                   "id":51,
+                   "nombre":"Chen",
+                   "descripcion":"Trueno. La conmoción. Lo suscitativo.",
+                   "superiorT":"Chen",
+                   "valorSupT":[7,8,8]
+                },
+                {
+                   "id":3,
+                   "nombre":"Chun",
+                   "descripcion":"Acumular. El obstáculo inicial. La dificultad del comienzo.",
+                   "superiorT":"K'an",
+                   "valorSupT":[8,7,8]
+                },
+                {
+                   "id":27,
+                   "nombre":"I",
+                   "descripcion":"Nutrirse. La alimentación. Las fauces.",
+                   "superiorT":"Ken",
+                   "valorSupT":[8,8,7]
+                },
+                {
+                   "id":24,
+                   "nombre":"Fu",
+                   "descripcion":"Regresar. El retorno. Lo que vuelve.",
+                   "superiorT":"K'un",
+                   "valorSupT":[8,8,8]
+                },
+                {
+                   "id":42,
+                   "nombre":"I Chi",
+                   "descripcion":"Evolución. El aumento. La ganancia.",
+                   "superiorT":"Sun",
+                   "valorSupT":[8,7,7]
+                },
+                {
+                   "id":21,
+                   "nombre":"Shih Ho",
+                   "descripcion":"Quebrar mordiendo. La dentellada. La filosa mordedura.",
+                   "superiorT":"Li",
+                   "valorSupT":[7,8,7]
+                },
+                {
+                   "id":17,
+                   "nombre":"Sui",
+                   "descripcion":"Conformarse. La continuidad. El seguimiento.",
+                   "superiorT":"Tui",
+                   "valorSupT":[7,7,8]
+                }
+             ]
+          },
+          "K'an":{
+             "valorInfT":[8,7,8],
+             "hexagramas":[
+                {
+                   "id":6,
+                   "nombre":"Sung",
+                   "descripcion":"Disputar. El conflicto. El pleito.",
+                   "superiorT":"Ch'ien",
+                   "valorSupT":[7,7,7]
+                },
+                {
+                   "id":40,
+                   "nombre":"Hsieh",
+                   "descripcion":"Explicar. La liberación. El alivio.",
+                   "superiorT":"Chen",
+                   "valorSupT":[7,8,8]
+                },
+                {
+                   "id":29,
+                   "nombre":"K'an",
+                   "descripcion":"Peligro. Lo abismal. La caida.",
+                   "superiorT":"K'an",
+                   "valorSupT":[8,7,8]
+                },
+                {
+                   "id":4,
+                   "nombre":"Meng",
+                   "descripcion":"Juventud. El joven necio. La inmadurez.",
+                   "superiorT":"Ken",
+                   "valorSupT":[8,8,7]
+                },
+                {
+                   "id":7,
+                   "nombre":"Shih",
+                   "descripcion":"Ejército. La legión.",
+                   "superiorT":"K'un",
+                   "valorSupT":[8,8,8]
+                },
+                {
+                   "id":59,
+                   "nombre":"Huan",
+                   "descripcion":"Confusión. La dispersión. La disolución.",
+                   "superiorT":"Sun",
+                   "valorSupT":[8,7,7]
+                },
+                {
+                   "id":64,
+                   "nombre":"Wei Chi",
+                   "descripcion":"Inconcluso. Antes de la realización.",
+                   "superiorT":"Li",
+                   "valorSupT":[7,8,7]
+                },
+                {
+                   "id":47,
+                   "nombre":"K'un",
+                   "descripcion":"Angustia. La pesadumbre. El agotamiento.",
+                   "superiorT":"Tui",
+                   "valorSupT":[7,7,8]
+                }
+              ]
+          },
+          "Ken":{
+             "valorInfT":[8,8,7],
+             "hexagramas":[
+                {
+                   "id":33,
+                   "nombre":"Tun",
+                   "descripcion":"Retirarse. EL repliegue.",
+                   "superiorT":"Ch'ien",
+                   "valorSupT":[7,7,7]
+                },
+                {
+                   "id":62,
+                   "nombre":"Hsiao Kuo",
+                   "descripcion":"Pequeñas cosas importantes. La pequeña preponderancia.",
+                   "superiorT":"Chen",
+                   "valorSupT":[7,8,8]
+                },
+                {
+                   "id":39,
+                   "nombre":"Chien",
+                   "descripcion":"Dificultad. El obstáculo. El impedimento.",
+                   "superiorT":"K'an",
+                   "valorSupT":[8,7,8]
+                },
+                {
+                   "id":52,
+                   "nombre":"Ken",
+                   "descripcion":"Cimientos. La quietud. La detención.",
+                   "superiorT":"Ken",
+                   "valorSupT":[8,8,7]
+                },
+                {
+                   "id":15,
+                   "nombre":"Ch'ien",
+                   "descripcion":"Condescendencia. La modestia. La humildad",
+                   "superiorT":"K'un",
+                   "valorSupT":[8,8,8]
+                },
+                {
+                   "id":53,
+                   "nombre":"Chien",
+                   "descripcion":"Evolución. El progreso gradual.",
+                   "superiorT":"Sun",
+                   "valorSupT":[8,7,7]
+                },
+                {
+                   "id":56,
+                   "nombre":"Lü",
+                   "descripcion":"Viajero. El andariego.",
+                   "superiorT":"Li",
+                   "valorSupT":[7,8,7]
+                },
+                {
+                   "id":31,
+                   "nombre":"Hsien",
+                   "descripcion":"Unir. La influencia. La atracción.",
+                   "superiorT":"Tui",
+                   "valorSupT":[7,7,8]
+                }
+             ]
+          },
+          //! Aqui me quedé
+          "K'un":{
+            "valorInfT":[8,8,8],
+            "hexagramas":[
+               {
+                  "id":1,
+                  "nombre":"Ch'ien",
+                  "descripcion":"Cielo. Lo creativo. El principio generador.",
+                  "superiorT":"Ch'ien",
+                  "valorSupT":[7,7,7]
+               },
+               {
+                  "id":34,
+                  "nombre":"Ta Chuang",
+                  "descripcion":"Gran fuerza. El gran vigor.",
+                  "superiorT":"Chen",
+                  "valorSupT":[7,8,8]
+               },
+               {
+                  "id":5,
+                  "nombre":"Hsü",
+                  "descripcion":"Esperar. La espera. La maduración.",
+                  "superiorT":"K'an",
+                  "valorSupT":[8,7,8]
+               },
+               {
+                  "id":26,
+                  "nombre":"Ta Ch'u",
+                  "descripcion":"Fuerza educadora. El poder de lo fuerte. La gran acumulación.",
+                  "superiorT":"Ken",
+                  "valorSupT":[8,8,7]
+               },
+               {
+                  "id":11,
+                  "nombre":"T'ai",
+                  "descripcion":"Prosperidad. La paz. La armonía.",
+                  "superiorT":"K'un",
+                  "valorSupT":[8,8,8]
+               },
+               {
+                  "id":9,
+                  "nombre":"Hsiao Ch'u",
+                  "descripcion":"Animalito doméstico. La pequeña fuerza.",
+                  "superiorT":"Sun",
+                  "valorSupT":[8,7,7]
+               },
+               {
+                  "id":14,
+                  "nombre":"Ta Yu",
+                  "descripcion":"Gran dominio. La gran posesión. Lo que se tiene de más.",
+                  "superiorT":"Li",
+                  "valorSupT":[7,8,7]
+               },
+               {
+                  "id":43,
+                  "nombre":"Kuai",
+                  "descripcion":"Decidir. El desbordamiento. La resolución.",
+                  "superiorT":"Tui",
+                  "valorSupT":[7,7,8]
+               }
+            ]
+          },
+          "Sun":{
+            "valorInfT":[8,7,7],
+            "hexagramas":[
+               {
+                  "id":25,
+                  "nombre":"Wu Wang",
+                  "descripcion":"Sinceridad. La inocencia. La naturalidad.",
+                  "superiorT":"Ch'ien",
+                  "valorSupT":[7,7,7]
+               },
+               {
+                  "id":51,
+                  "nombre":"Chen",
+                  "descripcion":"Trueno. La conmoción. Lo suscitativo.",
+                  "superiorT":"Chen",
+                  "valorSupT":[7,8,8]
+               },
+               {
+                  "id":3,
+                  "nombre":"Chun",
+                  "descripcion":"Acumular. El obstáculo inicial. La dificultad del comienzo.",
+                  "superiorT":"K'an",
+                  "valorSupT":[8,7,8]
+               },
+               {
+                  "id":27,
+                  "nombre":"I",
+                  "descripcion":"Nutrirse. La alimentación. Las fauces.",
+                  "superiorT":"Ken",
+                  "valorSupT":[8,8,7]
+               },
+               {
+                  "id":24,
+                  "nombre":"Fu",
+                  "descripcion":"Regresar. El retorno. Lo que vuelve.",
+                  "superiorT":"K'un",
+                  "valorSupT":[8,8,8]
+               },
+               {
+                  "id":42,
+                  "nombre":"I Chi",
+                  "descripcion":"Evolución. El aumento. La ganancia.",
+                  "superiorT":"Sun",
+                  "valorSupT":[8,7,7]
+               },
+               {
+                  "id":21,
+                  "nombre":"Shih Ho",
+                  "descripcion":"Quebrar mordiendo. La dentellada. La filosa mordedura.",
+                  "superiorT":"Li",
+                  "valorSupT":[7,8,7]
+               },
+               {
+                  "id":17,
+                  "nombre":"Sui",
+                  "descripcion":"Conformarse. La continuidad. El seguimiento.",
+                  "superiorT":"Tui",
+                  "valorSupT":[7,7,8]
+               }
+            ]
+          },
+          "Li":{
+            "valorInfT":[7,8,7],
+            "hexagramas":[
+               {
+                  "id":6,
+                  "nombre":"Sung",
+                  "descripcion":"Disputar. El conflicto. El pleito.",
+                  "superiorT":"Ch'ien",
+                  "valorSupT":[7,7,7]
+               },
+               {
+                  "id":40,
+                  "nombre":"Hsieh",
+                  "descripcion":"Explicar. La liberación. El alivio.",
+                  "superiorT":"Chen",
+                  "valorSupT":[7,8,8]
+               },
+               {
+                  "id":29,
+                  "nombre":"K'an",
+                  "descripcion":"Peligro. Lo abismal. La caida.",
+                  "superiorT":"K'an",
+                  "valorSupT":[8,7,8]
+               },
+               {
+                  "id":4,
+                  "nombre":"Meng",
+                  "descripcion":"Juventud. El joven necio. La inmadurez.",
+                  "superiorT":"Ken",
+                  "valorSupT":[8,8,7]
+               },
+               {
+                  "id":7,
+                  "nombre":"Shih",
+                  "descripcion":"Ejército. La legión.",
+                  "superiorT":"K'un",
+                  "valorSupT":[8,8,8]
+               },
+               {
+                  "id":59,
+                  "nombre":"Huan",
+                  "descripcion":"Confusión. La dispersión. La disolución.",
+                  "superiorT":"Sun",
+                  "valorSupT":[8,7,7]
+               },
+               {
+                  "id":64,
+                  "nombre":"Wei Chi",
+                  "descripcion":"Inconcluso. Antes de la realización.",
+                  "superiorT":"Li",
+                  "valorSupT":[7,8,7]
+               },
+               {
+                  "id":47,
+                  "nombre":"K'un",
+                  "descripcion":"Angustia. La pesadumbre. El agotamiento.",
+                  "superiorT":"Tui",
+                  "valorSupT":[7,7,8]
+               }
+             ]
+          },
+          "Tui":{
+            "valorInfT":[7,7,8],
+            "hexagramas":[
+               {
+                  "id":33,
+                  "nombre":"",
+                  "descripcion":"",
+                  "superiorT":"Ch'ien",
+                  "valorSupT":[7,7,7]
+               },
+               {
+                  "id":62,
+                  "nombre":"",
+                  "descripcion":"",
+                  "superiorT":"Chen",
+                  "valorSupT":[7,8,8]
+               },
+               {
+                  "id":39,
+                  "nombre":"",
+                  "descripcion":"",
+                  "superiorT":"K'an",
+                  "valorSupT":[8,7,8]
+               },
+               {
+                  "id":52,
+                  "nombre":"",
+                  "descripcion":"",
+                  "superiorT":"Ken",
+                  "valorSupT":[8,8,7]
+               },
+               {
+                  "id":15,
+                  "nombre":"",
+                  "descripcion":"",
+                  "superiorT":"K'un",
+                  "valorSupT":[8,8,8]
+               },
+               {
+                  "id":53,
+                  "nombre":"",
+                  "descripcion":"",
+                  "superiorT":"Sun",
+                  "valorSupT":[8,7,7]
+               },
+               {
+                  "id":56,
+                  "nombre":"",
+                  "descripcion":"",
+                  "superiorT":"Li",
+                  "valorSupT":[7,8,7]
+               },
+               {
+                  "id":31,
+                  "nombre":"",
+                  "descripcion":"",
+                  "superiorT":"Tui",
+                  "valorSupT":[7,7,8]
+               }
+            ]
+          }
+       }
+    ]
+ }
