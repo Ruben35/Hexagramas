@@ -1,7 +1,7 @@
 //*********************************
 // Variables Globales
 //*********************************
-var hexagramas;
+var hexagramas=data; //JSON obtenido de hexagramas.js
 
 //*********************************
 // Funciones
@@ -100,21 +100,3 @@ function equalsArrays(array1,array2){
         else
             return false;
 }
-
-//*********************************
-// Ejecución Normal
-//*********************************
-
-//Inicio Obtencion JSON
-fetch('./js/hexagramas.json')
-  .then((response) => {
-    return response.json()
-  })
-  .then((data) => {
-    hexagramas=data;
-    console.log(data)
-  })
-  .catch((err) => {
-      console.log("No se pudo obtener JSON hexagramas")
-  })
-// Finalización de obtención de JSON
