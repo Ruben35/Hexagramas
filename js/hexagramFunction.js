@@ -1,24 +1,21 @@
-
-
-/*********************************
-* Variables Globales
-*********************************/ 
+//*********************************
+// Variables Globales
+//*********************************
 var hexagramas;
 
-/*********************************
-* Funciones
-*********************************/ 
+//*********************************
+// Funciones
+//*********************************
 
 /**
  * Funcion para obtener los datos de un hexagrama dado un arreglo con los valores que representen las lineas yin (7) & yang (8)
  * 
  * @param {int[]} arreglo Arreglo de longitud 6 con valor de hexagrama.
  * @return {Object} Retorna objeto con datos del hexagrama (id,nombre,descripcion,inferiorT,superiorT,valor)
- *                    Si no existe regresa objeto con id=0 y valor ingresado.
+ *                  Si no existe regresa objeto con id=0 y valor ingresado.
  * @throws {length} Lanza error si el arreglo no es de 6 valores.
  */
 function getHexagramByValue(arreglo){
-    
     if(arreglo.length!=6)
         throw "Error: Solo se admite arreglo de 6 valores"
 
@@ -53,6 +50,39 @@ function getHexagramByValue(arreglo){
 }
 
 /**
+ * Funcion para obtener los datos de un hexagrama dado su id 
+ * 
+ * @param {int} id Numero de id del hexagrama a buscar 
+ * @return {Object} Retorna objeto con datos del hexagrama (id,nombre,descripcion,inferiorT,superiorT,valor)
+ *                  Si no existe regresa objeto con id=0
+ */
+function getHexagramById(id){
+    var tabla=hexagramas.inferiorT;
+    var datosHexagrama = new Object();
+    var encontrado=false;
+
+    for(fila of tabla){
+        for(celda of fila.hexagramas){
+            if(celda.id==id){
+                datosHexagrama.id=celda.id;
+                datosHexagrama.descripcion=celda.descripcion;
+                datosHexagrama.nombre=celda.nombre;
+                datosHexagrama.superiorT=celda.superiorT;
+                datosHexagrama.inferiorT=fila.nombre;
+                datosHexagrama.valor=fila.valorInfT.concat(celda.valorSupT);
+                encontrado=true;
+            }
+        }
+    }
+    
+    if(!encontrado)
+        datosHexagrama.id=0;
+
+    return datosHexagrama;
+}
+
+
+/**
  * Funcion para comparar dos arreglos y verficar si son identicos
  * (Para ser identicos deben de tener los mismos valores en el mismo orden y mismo tamaño)
  * 
@@ -71,9 +101,9 @@ function equalsArrays(array1,array2){
             return false;
 }
 
-/*********************************
-* Ejecución Normal
-*********************************/ 
+//*********************************
+// Ejecución Normal
+//*********************************
 
 //Inicio Obtencion JSON
 fetch('./js/hexagramas.json')
@@ -87,4 +117,4 @@ fetch('./js/hexagramas.json')
   .catch((err) => {
       console.log("No se pudo obtener JSON hexagramas")
   })
-// Finalización de obtención de JSON  
+// Finalización de obtención de JSON
