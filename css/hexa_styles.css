@@ -1,0 +1,133 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 5/01/2021, 07:19:32 PM
+    Author     : kat
+*/
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    background-color: #f2f2f2;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+}
+
+.ins {
+    width: 40%;
+    background-color: white;
+    margin: auto;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 3px 3px 20px grey;
+}
+
+.hex{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    margin: auto;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 3px 3px 20px grey;    
+}
+
+.inputs{
+    background-color: white;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    padding: 10px;
+}
+
+.number-input{
+    display: block;
+    margin: auto;
+    font-size: 40px;
+    width: 20%;
+    height: 50px;
+}
+
+.buttons{
+    background-color: white;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    padding: 10px;
+}
+
+.lineaction-button{
+    display: block;
+    margin: auto;
+    background-color: #f25c05;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    color:#ffffff;
+    font-family: 'Roboto Light', sans-serif, '300';
+    font-size: 18px;
+    padding: 17px 34px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #000000;
+}
+
+.hexaction-button{
+    display: block;
+    margin: auto; 
+    background-color: #5A7302;
+    border-radius: 20px;
+    border: none;
+    cursor:pointer;
+    color:#ffffff;
+    font-family: 'Roboto Light', sans-serif, '300';
+    font-size: 18px;
+    padding: 17px 34px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #000000;
+}
+
+.hexadiagram{
+    background-color: white;
+    display: block;
+    margin: auto;
+}
+
+h1 {
+    font-family: 'Roboto Black', sans-serif, '900';
+    font-size: 70px;
+}
+
+b {
+    font-family: 'Roboto Black', sans-serif, '900';
+    font-size: 45px;
+    margin: auto;
+}
+
+.info-text{
+    font-family: 'Roboto Light', sans-serif, '300';
+    font-size: 20px;
+    background-color: white;
+    text-align: center;
+    padding: 5px 20px;
+}
+    
+.box{
+    background-color: white;
+    margin: auto;
+    border-radius: 15px;
+    padding: 30px;
+    width: 24.99999%;
+    box-shadow: 3px 3px 20px grey;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
