@@ -99,11 +99,25 @@ td:hover {
 }
 
 footer {
-	font-size: 40px;
 	background-color: #f29f05;
 	width: 100%;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+footer > b {
+	font-weight: bold;
 }
 
 footer > div {
 	display: inline-block;
+	font-size: 30px;
+	text-align: center;
+	padding: 20px;
+}
+
+footer > div > img {
+	height: auto;
 }
