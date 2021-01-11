@@ -57,3 +57,4 @@ function resetInputs() {
     document.getElementById("digit_2").value = "";
     document.getElementById("digit_3").value = "";
 }
+
