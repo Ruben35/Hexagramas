@@ -30,13 +30,14 @@ body {
 }
 
 .hex{
-    width: 40%;
+    width: 50%;
     display: flex;
     flex-direction: row;
     background-color: white;
     margin: auto;
     border-radius: 15px;
     padding: 20px;
+    
     box-shadow: 3px 3px 20px grey;    
 }
 
@@ -98,6 +99,37 @@ body {
     background-color: white;
     display: block;
     margin: auto;
+    text-align: center;
+}
+
+.diagram{
+    background-color: #f25c05;
+    border-radius: 7px;
+    height: 200px;   
+    width: 150px;
+    font-family: 'Roboto Light', sans-serif, '300';
+}
+
+.hexa-title{
+    text-align: center;
+}
+
+#dgm1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#dgm2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#dgm3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
@@ -130,4 +162,3 @@ b {
     flex-flow: row wrap;
     align-items: center;
 }
-
