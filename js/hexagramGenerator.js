@@ -139,6 +139,8 @@ function showDescription(line_values, line_values_left, line_values_right) {
             document.getElementById('hexagrama-descripcion-resultado-2').style.display = 'inline-block';
             document.getElementById('hexagrama-descripcion-resultado-nombre-2').innerHTML = datos4.id+". "+datos4.nombre;
             document.getElementById('hexagrama-descripcion-result-2').innerHTML = datos4.descripcion;
+
+            selected(datos2.id, datos4.id);
         } else {
             var datos = getHexagramByValue(line_values);
             var datos2 = getHexagramById(datos.id);
@@ -146,8 +148,15 @@ function showDescription(line_values, line_values_left, line_values_right) {
             document.getElementById('hexagrama-descripcion-resultado-1').style.display = 'inline-block';
             document.getElementById('hexagrama-descripcion-resultado-nombre-1').innerHTML = datos2.id+". "+datos2.nombre;
             document.getElementById('hexagrama-descripcion-result-1').innerHTML = datos2.descripcion;
+
+            selected(datos2.id, 'NULL');
         }
     }
+}
+
+function selected(id, id2) {
+    document.getElementById(id).style.backgroundColor = '#f25c05';
+    document.getElementById(id2).style.backgroundColor = '#f25c05';
 }
 
 function eraseLine() {
@@ -206,7 +215,6 @@ function eraseHexagram() {
     document.getElementById("digit_1").focus();
 
     document.getElementById('hexagrama-descripcion-resultado-1').style.display = 'none';
-
     document.getElementById('hexagrama-descripcion-resultado-2').style.display = 'none';
 }
 
