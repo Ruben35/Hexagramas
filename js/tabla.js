@@ -12,8 +12,6 @@ function meterAlDiv(event){
 }
 
 function  sacardelDiv(){
-    //Aqui manejas el otro div
     document.getElementById('hexagrama-descripcion-tabla').style.visibility = 'hidden';
     document.getElementById('hexagrama-descripcion-tabla').style.opacity=0;
-
 }

@@ -10,6 +10,11 @@ body {
 	background-color: #f2f2f2;
 }
 
+::selection{
+	background: #5a7302;
+	color:white;
+}
+
 h1 {
 	font-family: 'Roboto Black', sans-serif, '900';
 	font-size: 70px;
@@ -47,6 +52,10 @@ td {
 	box-shadow: 2px 2px 2px grey; /* (-)izquierda-derecha(+), (-)arriba-abajo(+), radio (mayor es borroso, 0 es solido*/
 	justify-content: center;
 	width: 11.11111%;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
 }
 
 td > img {
@@ -60,6 +69,34 @@ td:hover:not(.td-header){
 	background-color: #fb7f37;
 	color: white;
 }
+
+.esquina{
+	font-size: 12pt;
+	background: 
+         linear-gradient(to top right,
+             rgba(0,0,0,0) 0%,
+             rgba(0,0,0,0) calc(50% - 0.8px),
+             rgba(0,0,0,1) 50%,
+             rgba(0,0,0,0) calc(50% + 0.8px),
+			 rgba(0,0,0,0) 100%);
+	background-color: white;
+}
+
+.esquina div{
+	
+}
+
+.esquina p{
+	float: right;
+	margin-right: 5px;
+}
+
+.esquina p + p{
+	margin-top: 20px;
+	margin-left: 5px;
+	float: left;
+}
+
 
 .td-selected {
 	background-color: #f25c05;
