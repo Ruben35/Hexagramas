@@ -94,6 +94,10 @@ td:hover {
 	transform: translate(-5px, -5px);
 }
 
+#hexagrama-descripcion-resultado-1 {
+	display: none;
+}
+
 #hexagrama-descripcion-resultado-2 {
 	display: none;
 }

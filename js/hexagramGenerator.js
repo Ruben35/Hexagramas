@@ -96,6 +96,9 @@ function addLine() {
             console.log(line_values);
             console.log(line_values_left);
             console.log(line_values_right);
+
+            showDescription(line_values, line_values_left, line_values_right);
+
         } else {
             alert("Un hexagrama solo puede contener 6 lineas.");
         }
@@ -107,6 +110,33 @@ function addLine() {
             console.log("Mutante found");
             document.getElementById("diagram1").style.display = "block";
             document.getElementById("diagram3").style.display = "block";
+        }
+    }
+}
+
+function showDescription(line_values, line_values_left, line_values_right) {
+    if(line_values == 6) {
+        if (isMutant) {
+            var datos = getHexagramByValue(line_values_left);
+            var datos2 = getHexagramById(datos.id);
+
+            var datos3 = getHexagramByValue(line_values_right);
+            var datos4 = getHexagramById(datos3.id);
+
+            document.getElementById('hexagrama-descripcion-resultado-1').style.display = 'inline-block';
+            document.getElementById('hexagrama-descripcion-resultado-nombre-1').innerHTML = datos2.id+". "+datos2.nombre;
+            document.getElementById('hexagrama-descripcion-result-1').innerHTML = datos2.descripcion;
+
+            document.getElementById('hexagrama-descripcion-resultado-2').style.display = 'inline-block';
+            document.getElementById('hexagrama-descripcion-resultado-nombre-2').innerHTML = datos4.id+". "+datos4.nombre;
+            document.getElementById('hexagrama-descripcion-result-2').innerHTML = datos4.descripcion;
+        } else {
+            var datos = getHexagramByValue(line_values);
+            var datos2 = getHexagramById(datos.id);
+
+            document.getElementById('hexagrama-descripcion-resultado-1').style.display = 'inline-block';
+            document.getElementById('hexagrama-descripcion-resultado-nombre-1').innerHTML = datos2.id+". "+datos2.nombre;
+            document.getElementById('hexagrama-descripcion-result-1').innerHTML = datos2.descripcion;
         }
     }
 }
