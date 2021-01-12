@@ -108,6 +108,8 @@ function addLine() {
             document.getElementById("diagram1").style.display = "block";
             document.getElementById("diagram3").style.display = "block";
         }
+    }else{
+        document.getElementById("digit_1").focus();
     }
 }
 

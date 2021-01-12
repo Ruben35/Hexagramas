@@ -26,6 +26,7 @@ body {
     margin: auto;
     border-radius: 15px;
     padding: 20px;
+    margin-right: 88px;
     box-shadow: 3px 3px 20px grey;
 }
 
@@ -51,9 +52,22 @@ body {
 .number-input{
     display: block;
     margin: auto;
+    text-align: center;
+    border-radius: 10px;
+    border: solid 4px #303030;
+    outline: none;
     font-size: 40px;
     width: 20%;
     height: 50px;
+}
+
+.number-input:focus{
+    border: solid 4px #f28705;
+    transition: all 0.3s
+}
+
+.number-input::placeholder{
+    color: #C7C4C4;
 }
 
 .buttons{
@@ -68,30 +82,45 @@ body {
     display: block;
     margin: auto;
     background-color: #f25c05;
-    border-radius: 20px;
+    border-radius: 15px;
     border: none;
     cursor: pointer;
     color:#ffffff;
-    font-family: 'Roboto Light', sans-serif, '300';
+    font-family: 'Roboto Regular', sans-serif, '300';
     font-size: 18px;
     padding: 17px 34px;
     text-decoration: none;
     text-shadow: 0px 1px 0px #000000;
+    box-shadow: 0px 5px 11px rgba(0, 0, 0, 0.15);
+    outline: none;
+    transition: all 0.5s
+}
+
+.lineaction-button:hover{
+    background-image: linear-gradient(to bottom, #f25c05, #792e03 573%);
+    box-shadow: 0px 5px 10px rgba(242, 135, 5, 0.5);
 }
 
 .hexaction-button{
     display: block;
     margin: auto; 
     background-color: #5A7302;
-    border-radius: 20px;
+    border-radius: 15px;
     border: none;
     cursor:pointer;
     color:#ffffff;
-    font-family: 'Roboto Light', sans-serif, '300';
+    font-family: 'Roboto Regular', sans-serif, '300';
     font-size: 18px;
     padding: 17px 34px;
     text-decoration: none;
     text-shadow: 0px 1px 0px #000000;
+    box-shadow: 0px 5px 11px rgba(0, 0, 0, 0.15);
+    outline: none;
+}
+
+.hexaction-button:hover{
+    background-image: linear-gradient(to bottom, #5a7302, #2d3a01 589%);
+    box-shadow: 0 5px 10px 0 rgba(135, 173, 2, 0.5);
 }
 
 .hexadiagram{
@@ -102,15 +131,27 @@ body {
 }
 
 .diagram{
-    background-color: #f25c05;
+    background-color: #f29f05;
     border-radius: 7px;
     height: 200px;   
     width: 150px;
     font-family: 'Roboto Light', sans-serif, '300';
+    -webkit-animation: breathing 3s ease-out infinite normal;
+    animation: breathing 3s ease-out infinite normal;
+    transition: all 1s linear;
+}
+
+.hidden {
+    display: none;
+  }
+  
+.visuallyhidden {
+    opacity: 0;
 }
 
 .hexa-title{
     text-align: center;
+    margin-bottom: 10px;
 }
 
 #dgm1{
@@ -153,11 +194,65 @@ b {
 .box{
     background-color: white;
     margin: auto;
-    border-radius: 15px;
+    border-radius: 0 0 60px 60px;
     padding: 30px;
     width: 24.99999%;
-    box-shadow: 3px 3px 20px grey;
+    box-shadow: 0px 7px 23px rgba(0, 0, 0, 0.16);
+    text-shadow: 2px 5px 9px rgba(0, 0, 0, 0.16);
     display: flex;
     flex-flow: row wrap;
     align-items: center;
+}
+
+
+
+
+@-webkit-keyframes breathing {
+0% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+25% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+60% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+100% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+}
+}
+
+
+
+@keyframes breathing {
+0% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+25% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+60% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+100% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+}
 }
