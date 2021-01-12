@@ -94,6 +94,7 @@ body {
     box-shadow: 0px 5px 11px rgba(0, 0, 0, 0.15);
     outline: none;
     transition: all .2s;
+   
 }
 
 .lineaction-button:hover{
@@ -138,11 +139,16 @@ body {
     border-radius: 7px;
     height: 200px;   
     width: 150px;
-    font-family: 'Roboto Light', sans-serif, '300';
+    font-family: 'Roboto Bold', sans-serif, '300';
     -webkit-animation: breathing 3s ease-out infinite normal;
     animation: breathing 3s ease-out infinite normal;
     transition: all 1s linear;
     box-shadow: 5px 7px 10px 0 rgba(0, 0, 0, 0.16);
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    padding-bottom:20px;
 }
 
 .hexa-title{

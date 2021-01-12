@@ -44,7 +44,7 @@ function addLine() {
                     console.log("Generando linea yin mutante ___x___ ...");
                     content = document.createTextNode("___x___");
                     //left hexagram content
-                    left_content = document.createTextNode("___ ___");
+                    left_content = document.createTextNode('___\u00A0\u00A0___');
                     line_values_left.push(8);
                     //right hexagram content
                     right_content = document.createTextNode("_______");
@@ -62,12 +62,12 @@ function addLine() {
                     break;
                 case 8:
                     console.log("Generando linea yin ___ ___ ...");
-                    content = document.createTextNode("___ ___");
+                    content = document.createTextNode('___\u00A0\u00A0___');
                     //left hexagram content
-                    left_content = document.createTextNode("___ ___");
+                    left_content = document.createTextNode('___\u00A0\u00A0___');
                     line_values_left.push(suma);
                     //right hexagram content
-                    right_content = document.createTextNode("___ ___");
+                    right_content = document.createTextNode('___\u00A0\u00A0___');
                     line_values_right.push(suma);
                     break;
                 case 9:
@@ -77,7 +77,7 @@ function addLine() {
                     left_content = document.createTextNode("_______");
                     line_values_left.push(7);
                     //right hexagram content
-                    right_content = document.createTextNode("___ ___");
+                    right_content = document.createTextNode('___\u00A0\u00A0___');
                     line_values_right.push(8);
                     break;
                 default:
@@ -134,10 +134,13 @@ function showDescription(line_values, line_values_left, line_values_right) {
 
             document.getElementById('hexagrama-descripcion-resultado-1').style.display = 'inline-block';
             document.getElementById('hexagrama-descripcion-resultado-nombre-1').innerHTML = datos2.id+". "+datos2.nombre;
+            document.getElementById('diagram1-title').innerHTML = datos2.id+". "+datos2.nombre;
+            document.getElementById('diagram2-title').innerHTML = "Hexagram";
             document.getElementById('hexagrama-descripcion-result-1').innerHTML = datos2.descripcion;
 
             document.getElementById('hexagrama-descripcion-resultado-2').style.display = 'inline-block';
             document.getElementById('hexagrama-descripcion-resultado-nombre-2').innerHTML = datos4.id+". "+datos4.nombre;
+            document.getElementById('diagram3-title').innerHTML = datos4.id+". "+datos4.nombre;
             document.getElementById('hexagrama-descripcion-result-2').innerHTML = datos4.descripcion;
 
             selected(datos2.id, datos4.id);
@@ -148,6 +151,9 @@ function showDescription(line_values, line_values_left, line_values_right) {
             document.getElementById('hexagrama-descripcion-resultado-1').style.display = 'inline-block';
             document.getElementById('hexagrama-descripcion-resultado-nombre-1').innerHTML = datos2.id+". "+datos2.nombre;
             document.getElementById('hexagrama-descripcion-result-1').innerHTML = datos2.descripcion;
+            document.getElementById('diagram2-title').innerHTML = datos2.id+". "+datos2.nombre;
+            document.getElementById('hexagrama-descripcion-resultado-2').style.display = 'none';
+
 
             selected(datos2.id, 'NULL');
         }
@@ -157,6 +163,14 @@ function showDescription(line_values, line_values_left, line_values_right) {
 function selected(id, id2) {
     document.getElementById(id).style.backgroundColor = '#f25c05';
     document.getElementById(id2).style.backgroundColor = '#f25c05';
+}
+
+function deselected(){
+    for(var i=1;i<=64;i++){
+        document.getElementById(i).style.backgroundColor = '#ffffff';
+    }
+    document.getElementById('diagram2-title').innerHTML = "Hexagram";
+    document.getElementById('hexagrama-descripcion-resultado-2').style.display = 'none';
 }
 
 function eraseLine() {
@@ -188,6 +202,7 @@ function eraseLine() {
         alert("No hay contenido para borrar.");
     }
     document.getElementById("digit_1").focus();
+    deselected();
 }
 
 function eraseHexagram() {
@@ -216,6 +231,7 @@ function eraseHexagram() {
 
     document.getElementById('hexagrama-descripcion-resultado-1').style.display = 'none';
     document.getElementById('hexagrama-descripcion-resultado-2').style.display = 'none';
+    deselected();
 }
 
 function isValidNumber(e) {
