@@ -106,11 +106,19 @@ function addLine() {
 
     if (line_values.length == 6) {
         // indexOf: El primer índice del elemento en la matriz; -1 si no se encuentra.
-        if (((line_values.indexOf(6)) && (line_values.indexOf(9))) != -1) {
-            console.log("Mutante found");
+        if (line_values.indexOf(6) != -1) {
             document.getElementById("diagram1").style.display = "block";
             document.getElementById("diagram3").style.display = "block";
+        console.log("Mutant by 6 line value found.")    
+        } else {
+            if (line_values.indexOf(9) != -1) {
+                document.getElementById("diagram1").style.display = "block";
+                document.getElementById("diagram3").style.display = "block";    
+            }
+        console.log("Mutant by 9 line value found.");    
         }
+    }else{
+        document.getElementById("digit_1").focus();
     }
 }
 
@@ -169,6 +177,7 @@ function eraseLine() {
     } else {
         alert("No hay contenido para borrar.");
     }
+    document.getElementById("digit_1").focus();
 }
 
 function eraseHexagram() {
@@ -193,6 +202,7 @@ function eraseHexagram() {
     console.log(line_values);
     console.log(line_values_left);
     console.log(line_values_right);
+    document.getElementById("digit_1").focus();
 }
 
 function isValidNumber(e) {

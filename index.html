@@ -16,10 +16,9 @@
         <div class="box">
             <b>Hexagramas</b>  
         </div>
-        <br><br>
+        <br>
         <section id="hexagrama-construccion">
         <div class="contenedor">
-            <!-- Kat -->
             <div class="ins">             
                 <p class="info-text">Los símbolos del I Ching son hexagramas, grupos de líneas rectas y quebradas que se identifican con el Yin-yang y que se obtienen por un método aleatorio.</p>
                 
@@ -31,11 +30,11 @@
                     <input type="text" onkeypress="return isValidNumber(event)" class="number-input" id="digit_3" maxlength="1" onFocus="onFocusInput(this)" onBlur="onBlurInput(this)" placeholder="2" inputmode="numeric">
                 </div>
                 <div class="buttons">
-                    <input type="button" onclick="addLine()" value="Agregar linea" class="lineaction-button">
-                    <input type="button" onclick="eraseLine()" value="Borrar linea" class="lineaction-button">
+                    <input type="button" onclick="addLine()" value="Agregar Línea" class="lineaction-button">
+                    <input type="button" onclick="eraseLine()" value="Borrar Línea" class="lineaction-button">
                 </div>
                 <div class="buttons">
-                    <input type="button" onclick="eraseHexagram()" value="Borrar hexagrama" class="hexaction-button">
+                    <input type="button" onclick="eraseHexagram()" value="Borrar Hexagrama" class="hexaction-button">
                 </div>
                 
             </div>
@@ -62,7 +61,6 @@
         </div>
         </section>
         <section class="contenedor-descripcion">
-            <!-- Mariana -->
             <div class="hexagrama-descripcion" id="hexagrama-descripcion-resultado-1">
                 <b id="hexagrama-descripcion-resultado-nombre-1"></b><br>
                 <span id="hexagrama-descripcion-result-1"></span>
@@ -73,45 +71,44 @@
             </div>
         </section>
         <section id="tabla-hexagramas">
-            <!-- Mariana -->
             <article id="descripcion-hover">
                 <table>
                     <tr>
-                        <td></td>
-                        <td>
+                        <td class="td-header"></td>
+                        <td class="td-header">
                             <img src="img/Icono.png"><br>Ch'ien
                         </td>
-                        <td>
+                        <td class="td-header">
                             <img src="img/Icono2.png"><br>
                             Chen
                         </td>
-                        <td>
+                        <td class="td-header"> 
                             <img src="img/Icono3.png"><br>
                             K'an
                         </td>
-                        <td>
+                        <td class="td-header">
                             <img src="img/Icono4.png"><br>
                             Ken
                         </td>
-                        <td>
+                        <td class="td-header">
                             <img src="img/Icono5.png"><br>
                             K'un
                         </td>
-                        <td>
+                        <td class="td-header">
                             <img src="img/Icono6.png"><br>
                             Sun
                         </td>
-                        <td>
+                        <td class="td-header">
                             <img src="img/Icono7.png"><br>
                             Li
                         </td>
-                        <td>
+                        <td class="td-header">
                             <img src="img/Icono8.png"><br>
                             Tui
                         </td>
                     </tr>
                     <tr>
-                        <td>
+                        <td class="td-header">
                             <img src="img/Icono.png"><br>
                             Ch'ien
                         </td>
@@ -125,7 +122,7 @@
                         <td id="43">43</td>
                     </tr>
                     <tr>
-                        <td>
+                        <td class="td-header">
                             <img src="img/Icono2.png"><br>
                             Chen
                         </td>
@@ -139,7 +136,7 @@
                         <td id="17">17</td>
                     </tr>
                     <tr>
-                        <td>
+                        <td class="td-header">
                             <img src="img/Icono3.png"><br>
                             K'an
                         </td>
@@ -153,7 +150,7 @@
                         <td id="47">47</td>
                     </tr>
                     <tr>
-                        <td>
+                        <td class="td-header">
                             <img src="img/Icono4.png"><br>
                             Ken
                         </td>
@@ -167,7 +164,7 @@
                         <td id="31">31</td>
                     </tr>
                     <tr>
-                        <td>
+                        <td class="td-header">
                             <img src="img/Icono5.png"><br>
                             K'un
                         </td>
@@ -181,7 +178,7 @@
                         <td id="45">45</td>
                     </tr>
                     <tr>
-                        <td>
+                        <td class="td-header">
                             <img src="img/Icono6.png"><br>
                             Sun
                         </td>
@@ -195,7 +192,7 @@
                         <td id="28">28</td>
                     </tr>
                     <tr>
-                        <td>
+                        <td class="td-header">
                             <img src="img/Icono7.png"><br>
                             Li
                         </td>
@@ -209,7 +206,7 @@
                         <td id="49">49</td>
                     </tr>
                     <tr>
-                        <td>
+                        <td class="td-header">
                             <img src="img/Icono8.png"><br>
                             Tui
                         </td>
