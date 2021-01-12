@@ -20,6 +20,16 @@ b {
 	font-size: 45px;
 }
 
+.inputs {
+	font-size: 45px;
+}
+
+.botones {
+	font-size: 29px;
+}
+
+/*Tabla */
+
 table {
 	width: 66.66666%;
 	margin: 20px;
@@ -44,33 +54,28 @@ td > img {
 }
 
 td:hover {
-	-webkit-transition:all .9s ease; 
+	-webkit-transition:all .3s ease; 
 	transform: translate(-5px, -5px);
-	background-color: #f25c05;
+	/*background-color: #f25c05;*/
+	background-color: #fb7f37;
 	color: white;
 }
 
-.inputs {
-	font-size: 45px;
+.td-selected {
+	background-color: #f25c05;
 }
 
-.botones {
-	font-size: 29px;
+#hexagrama-descripcion-tabla {
+	visibility: hidden;
 }
 
-.footerTitulo {
-	font-family: 'Roboto Black', sans-serif, '900';
-	font-size: 45px;
-}
-
-#contenedor-descripcion {
+#descripcion-hover {
 	display: flex;
-    justify-content: center; 
+	justify-content: center;
+	align-items: center;
 }
 
-/*.titulo-tabla {
-	width: 500px;
-}*/
+/* Descripción resultado */
 
 .hexagrama-descripcion {
 	border-radius: 15px;
@@ -81,22 +86,26 @@ td:hover {
 	margin: 20px;
 	vertical-align: center;
 	box-shadow: 3px 3px 20px grey;
+	text-align: center;
 }
 
 .hexagrama-descripcion:hover {
-	-webkit-transition:all .9s ease; 
+	-webkit-transition:all .5s ease; 
 	transform: translate(-5px, -5px);
 }
 
-.hexagrama-descripcion2 {
+#hexagrama-descripcion-resultado-2 {
 	display: none;
 }
 
-#descripcion-hover {
+/* Contenedor */
+
+.contenedor-descripcion {
 	display: flex;
-	justify-content: center;
-	align-items: center;
+    justify-content: center; 
 }
+
+/* Footer */
 
 footer {
 	background-color: #f29f05;
@@ -105,6 +114,11 @@ footer {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+.footerTitulo {
+	font-family: 'Roboto Black', sans-serif, '900';
+	font-size: 45px;
 }
 
 footer > b {

@@ -642,8 +642,8 @@ data={
             },
             {
                "id": 36,
-               "nombre": "Luz que se apaga. El oscurecimiento.",
-               "descripcion": "Ming I",
+               "nombre": "Ming I",
+               "descripcion": "Luz que se apaga. El oscurecimiento.",
                "superiorT": "K'un",
                "valorSupT": [
                   8,
