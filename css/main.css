@@ -87,6 +87,8 @@ td:hover:not(.td-header){
 	vertical-align: center;
 	box-shadow: 3px 3px 20px grey;
 	text-align: center;
+	transition:visibility 0.3s linear,opacity 0.3s linear;
+	opacity: 1;
 }
 
 .hexagrama-descripcion:hover {

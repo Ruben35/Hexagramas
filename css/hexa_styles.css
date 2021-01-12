@@ -139,14 +139,7 @@ body {
     -webkit-animation: breathing 3s ease-out infinite normal;
     animation: breathing 3s ease-out infinite normal;
     transition: all 1s linear;
-}
-
-.hidden {
-    display: none;
-  }
-  
-.visuallyhidden {
-    opacity: 0;
+    box-shadow: 5px 7px 10px 0 rgba(0, 0, 0, 0.16);
 }
 
 .hexa-title{
