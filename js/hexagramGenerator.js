@@ -123,8 +123,9 @@ function addLine() {
 }
 
 function showDescription(line_values, line_values_left, line_values_right) {
-    if(line_values == 6) {
-        if (isMutant) {
+    if(line_values.length == 6) {
+        if (line_values.indexOf(6) != -1 || line_values.indexOf(9) != -1) {
+
             var datos = getHexagramByValue(line_values_left);
             var datos2 = getHexagramById(datos.id);
 
@@ -203,6 +204,10 @@ function eraseHexagram() {
     console.log(line_values_left);
     console.log(line_values_right);
     document.getElementById("digit_1").focus();
+
+    document.getElementById('hexagrama-descripcion-resultado-1').style.display = 'none';
+
+    document.getElementById('hexagrama-descripcion-resultado-2').style.display = 'none';
 }
 
 function isValidNumber(e) {
