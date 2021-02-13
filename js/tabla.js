@@ -15,3 +15,6 @@ function  sacardelDiv(){
     document.getElementById('hexagrama-descripcion-tabla').style.visibility = 'hidden';
     document.getElementById('hexagrama-descripcion-tabla').style.opacity=0;
 }
+function hola(){
+    alert("hola")
+;}
